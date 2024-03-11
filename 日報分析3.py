@@ -16,7 +16,7 @@ def extract_d_column(folder_path):
                 # Excelファイルを読み込む
                 wb = load_workbook(excel_file_path)
                 ws = wb.active
-                # 各行を走査してD列のデータを抽出
+                # 各行を走査してH列のデータを抽出
                 for row in ws.iter_rows():
                     if len(row) > 7:
                         output_data.append(row[7].value)
